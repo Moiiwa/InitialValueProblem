@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="903.9609375" prefWidth="1551.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="FXMLController">
+  <children>
+    <Label blendMode="SRC_OVER" contentDisplay="TEXT_ONLY" disable="false" focusTraversable="false" layoutX="14.0" layoutY="766.0" text="Mikhail Gudkov" textOverrun="LEADING_ELLIPSIS" visible="true">
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+    <CheckBox fx:id="CB1" layoutX="38.0" layoutY="432.0" mnemonicParsing="false" text="Exact Solution" />
+    <CheckBox fx:id="CB2" layoutX="38.0" layoutY="461.0" mnemonicParsing="false" text="Euler's Method" />
+    <CheckBox fx:id="CB3" layoutX="38.0" layoutY="494.0" mnemonicParsing="false" text="Euler Improved" />
+    <CheckBox fx:id="CB4" layoutX="38.0" layoutY="528.0" mnemonicParsing="false" text="Runge Kutta" />
+    <LineChart fx:id="Chart" layoutX="233.0" layoutY="55.0" legendSide="TOP" prefHeight="799.0" prefWidth="1246.0">
+      <xAxis>
+        <CategoryAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis side="LEFT" />
+      </yAxis>
+    </LineChart>
+    <Text layoutX="44.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initial Value Problem">
+      <font>
+        <Font size="40.0" />
+      </font>
+    </Text>
+    <TextField fx:id="initialX" layoutX="38.0" layoutY="105.0" prefWidth="118.0" promptText="Initial x" text="" />
+    <TextField fx:id="finalX" layoutX="38.0" layoutY="181.0" prefWidth="118.0" promptText="Final x" />
+    <TextField fx:id="stepsNum" layoutX="38.0" layoutY="217.0" prefWidth="118.0" promptText="Number of steps" />
+    <Button fx:id="button" layoutX="38.0" layoutY="678.0" mnemonicParsing="false" onAction="#handle" prefHeight="47.0" prefWidth="118.0" text="Build" />
+    <TextField fx:id="initialY" layoutX="38.0" layoutY="142.0" prefWidth="118.0" promptText="Initial y" />
+    <CheckBox fx:id="CB5" layoutX="38.0" layoutY="561.0" mnemonicParsing="false" text="Local Errors" />
+    <Label layoutX="38.0" layoutY="74.0" text="Graphs and local errors" />
+    <Label layoutX="38.0" layoutY="253.0" text="Global errors" />
+    <TextField fx:id="MinStep" layoutX="38.0" layoutY="279.0" prefWidth="118.0" promptText="Minimal step" />
+    <TextField fx:id="MaxStep" layoutX="38.0" layoutY="315.0" prefWidth="118.0" promptText="Maximum step" />
+    <TextField fx:id="StepStep" layoutX="38.0" layoutY="347.0" prefWidth="118.0" promptText="Step for steps" />
+    <CheckBox fx:id="GlobalErrors" layoutX="38.0" layoutY="596.0" mnemonicParsing="false" text="Global Errors" />
+  </children>
+</AnchorPane>
